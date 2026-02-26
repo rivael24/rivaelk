@@ -3,9 +3,15 @@
 namespace App\Http\Controllers;
 
 class PostController extends Controller
-{
-	public function show()
 	{
-		return view('test', ['var1' => '1', 'var2' => '2']);
+		public function show()
+		{
+			$name = 'Vladimir';
+			$surname = 'Alexeevich';
+			return view('post.show', [
+			'name' => $name,	
+			'surname' => $surname,
+			]);
+		}
 	}
-}
+?>
