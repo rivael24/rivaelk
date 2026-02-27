@@ -10,7 +10,7 @@ class PostController extends Controller
 			$surname = 'Alexeevich';
 			return view('post.show', [
 			'name' => $name,	
-			'surname' => $surname,
+			'surname1' => $surname,
 			]);
 		}
 	}
